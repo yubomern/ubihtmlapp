@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>UBI_SOFT Application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- ✅ NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#home">
+      <img src="assets/logo.png" width="40" class="me-2" />
+      <strong>UBI_SOFT</strong>
+    </a>
+    <div>
+      <a class="nav-link d-inline text-light" href="#services">Services</a>
+      <a class="nav-link d-inline text-light" href="#projects">Logos</a>
+      <a class="nav-link d-inline text-light" href="#examples">Examples</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ✅ HOME -->
+<section id="home" class="hero text-center text-light">
+  <div class="container">
+    <h1 class="display-4 fw-bold">UBI_SOFT</h1>
+    <p class="lead">Future Us – Digital Solutions & Innovation</p>
+  </div>
+</section>
+
+<!-- ✅ SERVICES -->
+<section id="services" class="container my-5">
+  <h2 class="text-center mb-4">Our Services</h2>
+  <div class="row text-center">
+    <div class="col-md-4 mb-3">
+      <div class="service-box">Web Development</div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="service-box">Mobile Applications</div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="service-box">Cloud, DevOps & Security</div>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ LOGO CARDS (1–5) -->
+<section id="projects" class="container my-5">
+  <h2 class="text-center mb-4">Our Logos & Projects</h2>
+
+  <div class="row g-4">
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="logo1.png" class="card-img-top" />
+        <div class="card-body">
+          <h5 class="card-title">Logo 1</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="logo2.png" class="card-img-top" />
+        <div class="card-body">
+          <h5 class="card-title">Logo 2</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="logo3.png" class="card-img-top" />
+        <div class="card-body">
+          <h5 class="card-title">Logo 3</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="logo4.png" class="card-img-top" />
+        <div class="card-body">
+          <h5 class="card-title">Logo 4</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="logo5.png" class="card-img-top" />
+        <div class="card-body">
+          <h5 class="card-title">Logo 5</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ CONTENTS / EXAMPLES -->
+<section id="examples" class="container my-5">
+  <h2 class="text-center mb-4">Technology Examples</h2>
+
+  <!-- GO EXAMPLE -->
+  <h4>Go (Golang) Example</h4>
+  <pre><code>
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello from UBI_SOFT using Golang!")
+}
+  </code></pre>
+
+  <!-- REACT + REDUX TOOLKIT -->
+  <h4>React + Redux Toolkit Example</h4>
+  <pre><code>
+import { createSlice } from "@reduxjs/toolkit";
+
+const counterSlice = createSlice({
+  name: "counter",
+  initialState: { value: 0 },
+  reducers: {
+    increment: state => { state.value += 1 },
+    decrement: state => { state.value -= 1 }
+  }
+});
+
+export const { increment, decrement } = counterSlice.actions;
+export default counterSlice.reducer;
+
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+  </code></pre>
+</section>
+<a href ="services.html">
+ services <a/>
+<!-- ✅ FOOTER -->
+
+
+<footer class="text-center text-light bg-dark p-3">
+  © <span id="year"></span> UBI_SOFT — Future Us
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
